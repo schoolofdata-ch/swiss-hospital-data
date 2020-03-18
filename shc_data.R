@@ -1,7 +1,7 @@
 library(readxl)
 library(plyr)
 
-data <- read_excel("kzp17_daten.xlsx", sheet="KZ2017_KZP17")
+data <- read_excel("data/kzp17_daten.xlsx", sheet="KZ2017_KZP17")
 data <- data[!is.na(data$JAHR) & data$Inst!="Ganze Schweiz",]
 
 # Select vars to keep
@@ -26,7 +26,7 @@ for (i in tosplit) {
 }
 
 # Add typology
-typo <- read_excel("kzp17_daten.xlsx", sheet="Typologie")
+typo <- read_excel("data/kzp17_daten.xlsx", sheet="Typologie")
 colnames(typo) <- c("Typ", "Typ_de", "Typ_fr", "Typ_it")
 
 data <- merge(data, typo, by="Typ", all=T)
@@ -41,6 +41,6 @@ table(data$SA, data$SA_CT)
 data <- data[,!(colnames(data) %in% tosplit)]
 
 # write
-write.csv(data, "shc_infra.csv", row.names = F, na="", fileEncoding = "UTF-8")
+write.csv(data, "output/shc_infra.csv", row.names = F, na="", fileEncoding = "UTF-8")
 
 
