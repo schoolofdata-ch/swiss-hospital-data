@@ -1,191 +1,207 @@
 {
-  "profile": "tabular-data-package", 
+  "name": "swiss-hospital-data",
+  "title": "Swiss Hospital Data",
+  "format": "csv",
+  "datapackage_version": "1.0.0",
+  "last_modified": "2020-03-20",
+  "licenses": [{
+    "name": "ODC-PDDL-1.0",
+    "path": "http://opendatacommons.org/licenses/pddl/",
+    "title": "Open Data Commons Public Domain Dedication and License v1.0"
+  }],
+  "sources": [
+    {
+      "name": "Key data on Swiss hospitals 2017",
+      "web": "https://opendata.swiss/en/dataset/key-data-on-swiss-hospitals-2017"
+    }
+  ],
+  "profile": "tabular-data-package",
   "resources": [
     {
-      "profile": "tabular-data-resource", 
-      "name": "shc_infra", 
-      "encoding": "utf-8", 
-      "format": "csv", 
-      "mediatype": "text/csv", 
-      "path": "shc_infra.csv", 
+      "profile": "tabular-data-resource",
+      "name": "shc_infra",
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "path": "data/shc_infra.csv",
       "schema": {
         "fields": [
           {
-            "type": "integer", 
-            "name": "id", 
+            "type": "integer",
+            "name": "id",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Typ", 
+            "type": "string",
+            "name": "Typ",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "JAHR", 
+            "type": "integer",
+            "name": "JAHR",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "KT", 
+            "type": "string",
+            "name": "KT",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Inst", 
+            "type": "string",
+            "name": "Inst",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Adr", 
+            "type": "string",
+            "name": "Adr",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Ort", 
+            "type": "string",
+            "name": "Ort",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "AnzStand", 
+            "type": "integer",
+            "name": "AnzStand",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Ops", 
+            "type": "integer",
+            "name": "Ops",
             "format": "default"
-          }, 
+          },
           {
-            "type": "number", 
-            "name": "PersA", 
+            "type": "number",
+            "name": "PersA",
             "format": "default"
-          }, 
+          },
           {
-            "type": "number", 
-            "name": "PersP", 
+            "type": "number",
+            "name": "PersP",
             "format": "default"
-          }, 
+          },
           {
-            "type": "number", 
-            "name": "PersMT", 
+            "type": "number",
+            "name": "PersMT",
             "format": "default"
-          }, 
+          },
           {
-            "type": "number", 
-            "name": "BettenStatA", 
+            "type": "number",
+            "name": "BettenStatA",
             "format": "default"
-          }, 
+          },
           {
-            "type": "number", 
-            "name": "pBettenBelStatA", 
+            "type": "number",
+            "name": "pBettenBelStatA",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "KostStatA", 
+            "type": "integer",
+            "name": "KostStatA",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "PLZ", 
+            "type": "integer",
+            "name": "PLZ",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Akt_A", 
+            "type": "integer",
+            "name": "Akt_A",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Akt_P", 
+            "type": "integer",
+            "name": "Akt_P",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Akt_R", 
+            "type": "integer",
+            "name": "Akt_R",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "Akt_B", 
+            "type": "integer",
+            "name": "Akt_B",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SL_NF", 
+            "type": "integer",
+            "name": "SL_NF",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SL_IPS", 
+            "type": "integer",
+            "name": "SL_IPS",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "LA_Amb", 
+            "type": "integer",
+            "name": "LA_Amb",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "LA_Stat", 
+            "type": "integer",
+            "name": "LA_Stat",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_MRI", 
+            "type": "integer",
+            "name": "SA_MRI",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_CT", 
+            "type": "integer",
+            "name": "SA_CT",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_PET", 
+            "type": "integer",
+            "name": "SA_PET",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_CC", 
+            "type": "integer",
+            "name": "SA_CC",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_LB", 
+            "type": "integer",
+            "name": "SA_LB",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_Lito", 
+            "type": "integer",
+            "name": "SA_Lito",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_Angio", 
+            "type": "integer",
+            "name": "SA_Angio",
             "format": "default"
-          }, 
+          },
           {
-            "type": "integer", 
-            "name": "SA_Dia", 
+            "type": "integer",
+            "name": "SA_Dia",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Typ_de", 
+            "type": "string",
+            "name": "Typ_de",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Typ_fr", 
+            "type": "string",
+            "name": "Typ_fr",
             "format": "default"
-          }, 
+          },
           {
-            "type": "string", 
-            "name": "Typ_it", 
+            "type": "string",
+            "name": "Typ_it",
             "format": "default"
           }
-        ], 
+        ],
         "missingValues": [
           ""
         ]
