@@ -1,15 +1,15 @@
 Swiss Hospital Data
 ---
 
-This is a collaborative effort to establish a common data set where the community can contribute data in a moderated way.
-
-We started with a Google sheet, which was cleaned up using OpenRefine, and then further aggregated in the `shc_data` R script here, and we are now working on a [schema proposal](https://github.com/openZH/covid19_hospitalinfra) with the Canton of Zürich as well as continuing work on a Data Package to be used as basis for further analysis and visualization.
+This is a collaborative effort to establish a common data set about Swiss public medical infrastructure, where the community can contribute and manage data in a moderated way. Our goal is to improve the transparency and efficiency of data exchange about basic indicators, expanding on the existing available open government data.
 
 This project was started at the [Monitoring COVID-19 effects](https://db.schoolofdata.ch/event/7#top) (#covid19mon) hackathon.
 
 - Visit our [challenge page](https://db.schoolofdata.ch/project/68) for further details and tasks.
-- View our public RStudio setup at https://rstudio.cloud/project/1049226
-- Suggest additional sources and ideas in our Community team chat
+- At the top of the page you should see our current notes, which are [backed up here](NOTES.md).
+- Please suggest additional data sources and ideas in the [issue tracker](issues).
+
+:construction: This README is very much Work In Progress. :construction:
 
 # Data
 
