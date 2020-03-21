@@ -1,12 +1,24 @@
+########################################################
+# Open data hackathon 2020
+
+# SWISS HOSPITAL INFRASTRUCTURE CHALLENGE
+
+# Authors: Fabienne Krauer & ???
+# Date: 2020-03-18
+# Updated: 2020-03-21
+########################################################
+
+
+
+rm(list=ls())
 library(readxl)
-library(plyr)
 
 data <- read_excel("src/kzp17_daten.xlsx", sheet="KZ2017_KZP17")
 data <- data[!is.na(data$JAHR) & data$Inst!="Ganze Schweiz",]
 
 # Select vars to keep
 data <- data[,c("JAHR","KT","Inst","Adr","Ort","Typ","Akt","SL", "AnzStand", "SA", "LA",
-                "Ops", "PersA", "PersP", "PersMT", "BettenStatA", "pBettenBelStatA", "KostStatA")]
+                "Ops", "PersA", "PersP", "PersMT", "BettenStatA", "pBettenBelStatA")]
 
 # Put Zip code in separate var
 data$PLZ <- substr(data$Ort,1,4)
